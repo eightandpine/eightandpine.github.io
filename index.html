@@ -2,7 +2,7 @@
 <script>
   $(function() {
     $.get('https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&channelId=UC9A7EGZcrfsuLtpyyQRmbww&eventType=live&key=AIzaSyA2NXaonfp6HwfPSxLxKPibYbVk3dtgh24', function(data){
-      $('iframe').attr('src', 'https://www.youtube.com/embed/'+dataitems[0]["id"]["videoId"])
+      $('iframe').attr('src', 'https://www.youtube.com/embed/'+data["items"][0]["id"]["videoId"])
     })
   })
   
